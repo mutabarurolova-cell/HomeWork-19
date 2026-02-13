@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #0b0f2a, #050817);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #1a1f3d;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    list-style: none;
+    width: 140px;
+}
+
+.auth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.auth a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #a78bfa;
+    cursor: pointer;
+}
+
+.auth button:hover {
+    background: #8b5cf6;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    width: 260px;
+    text-align: center;
+}
+
+.card img {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.social a:hover {
+    color: #a78bfa;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-btn{
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:35px;
+    left:0;
+    width:200px;
+    background:#1a1f3d;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(167,139,250,0.6);
+    display:none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+.drop-item{
+    display:block;
+    text-align:center;
+    padding:12px;
+    margin:8px 0;
+    border-radius:20px;
+    background:black;
+    color:white;
+    text-decoration:none;
+}
+
+.drop-item:hover{
+    background:#b69df8;
+    color:black;
+}
